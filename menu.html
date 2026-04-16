@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Hollyfood | Superhero Burgers South Ogden, UT</title>
+  <meta name="description" content="Explore Hollyfood's full menu: hero-themed burgers, sides, and drinks. Fresh, never-frozen beef with unique colored buns inspired by Marvel, DC &amp; Star Wars. South Ogden, UT." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">HOLLY<span>FOOD</span></a>
+      <ul class="navbar__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="visit.html">Visit Us</a></li>
+      </ul>
+      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary navbar__order-btn">Order Online</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">Our Story</a>
+      <a href="visit.html">Visit Us</a>
+      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary">Order Online</a>
+    </div>
+  </nav>
+
+  <!-- ===== MENU HERO ===== -->
+  <section class="menu-hero">
+    <h1>The Mission Dossier</h1>
+    <p>Every hero needs fuel. Choose your weapons wisely — all burgers come loaded with fries and a drink.</p>
+    <div class="menu-note">
+      <strong>🥩 Fresh Promise:</strong> All beef is fresh, never frozen. House-made buns crafted in-house. Health score: <strong>100/100</strong>.
+    </div>
+  </section>
+
+  <!-- ===== MENU CONTENT ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- HERO BURGERS -->
+      <div class="menu-category">
+        <div class="menu-category__title">⚡ Hero Burgers</div>
+        <p class="text-accent" style="margin-bottom: 24px; font-size: 0.95rem;">All burgers include fries &amp; a soft drink</p>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <div class="menu-item__emoji">🔴⭐</div>
+            <div class="menu-item__name">American Patriot</div>
+            <div class="menu-item__hero-name">Captain America Tribute</div>
+            <div class="menu-item__desc">American cheese, pickles, tomatoes, onion, house sauce. The signature red bun — shaped like the shield, built for champions.</div>
+            <div class="menu-item__price">$13.40</div>
+            <div class="menu-item__note">★ Fan Favorite</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__emoji">🖤🕷️</div>
+            <div class="menu-item__name">Symbiote</div>
+            <div class="menu-item__hero-name">Venom Tribute</div>
+            <div class="menu-item__desc">American &amp; cheddar cheese, bacon, caramelized onion, house sauce. Dark bun with cheese "eyes" — the dark side never tasted this good.</div>
+            <div class="menu-item__price">$13.40</div>
+            <div class="menu-item__note">★ Fan Favorite</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__emoji">💚🔥</div>
+            <div class="menu-item__name">Incredible Green</div>
+            <div class="menu-item__hero-name">Hulk Tribute</div>
+            <div class="menu-item__desc">American cheese, pickles, onion, lettuce, tomatoes, house sauce. Smash-level flavor on a vibrant green bun. You'll want seconds.</div>
+            <div class="menu-item__price">$13.40</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__emoji">🖤⚡</div>
+            <div class="menu-item__name">Dark Justice</div>
+            <div class="menu-item__hero-name">DC Universe Tribute</div>
+            <div class="menu-item__desc">Cheddar cheese, pickles, caramelized onion, tomatoes, house sauce. A brooding, complex flavor profile — perfect for creatures of the night.</div>
+            <div class="menu-item__price">$13.40</div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item__emoji">🎭🍔</div>
+            <div class="menu-item__name">Alter Ego</div>
+            <div class="menu-item__hero-name">Classic Hero</div>
+            <div class="menu-item__desc">American cheese, lettuce, tomatoes, house sauce. The undercover hero — no costume needed when your flavors are this powerful.</div>
+            <div class="menu-item__price">$13.40</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- BOSS LEVEL BURGERS -->
+      <div class="menu-category">
+        <div class="menu-category__title">💀 Boss Level</div>
+        <p style="color: var(--color-muted); margin-bottom: 24px; font-size: 0.95rem;">Only for the truly mighty. Challenge accepted?</p>
+        <div class="menu-grid">
+
+          <div class="menu-item menu-item--boss">
+            <div class="menu-item__emoji">🔪🧀</div>
+            <div class="menu-item__name">Lecter</div>
+            <div class="menu-item__hero-name">The Villain Upgrade</div>
+            <div class="menu-item__desc">Burger, double bacon, double cheese, pickles and cheese sauce. Evil has never tasted so magnificent.</div>
+            <div class="menu-item__price">$14.90</div>
+            <div class="menu-item__note">+ Fries &amp; Drink</div>
+          </div>
+
+          <div class="menu-item menu-item--boss">
+            <div class="menu-item__emoji">💀🔥</div>
+            <div class="menu-item__name">Hannibal</div>
+            <div class="menu-item__hero-name">The Final Boss</div>
+            <div class="menu-item__desc">Double burger, double bacon, triple cheese, pickles and cheese sauce. This is the end-game burger. It doesn't play fair.</div>
+            <div class="menu-item__price">$16.90</div>
+            <div class="menu-item__note">+ Fries &amp; Drink • Boss-Level Challenge</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SIDES & EXTRAS -->
+      <div class="menu-category">
+        <div class="menu-category__title">🛡️ Sides &amp; Extras</div>
+        <div class="sides-grid">
+
+          <div class="side-item">
+            <div class="side-item__emoji">🍟</div>
+            <div class="side-item__name">French Fries</div>
+            <div class="side-item__desc">Crispy golden sticks of potato perfection</div>
+            <div class="side-item__price">$6.60</div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item__emoji">🍗</div>
+            <div class="side-item__name">Chicken Tenders</div>
+            <div class="side-item__desc">Tender, juicy, golden chicken strips</div>
+            <div class="side-item__price">$5.90</div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item__emoji">🔥</div>
+            <div class="side-item__name">Nuggets</div>
+            <div class="side-item__desc">Bite-sized pieces of tender, juicy chicken</div>
+            <div class="side-item__price">$6.90</div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item__emoji">🌭</div>
+            <div class="side-item__name">Salchipapas</div>
+            <div class="side-item__desc">French fries topped with sliced sausage — a South American classic</div>
+            <div class="side-item__price">$7.60</div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item__emoji">🥗</div>
+            <div class="side-item__name">Salad</div>
+            <div class="side-item__desc">Lettuce, tomatoes, corn, olive, pickles, ranch sauce</div>
+            <div class="side-item__price">$12.90</div>
+          </div>
+
+          <div class="side-item">
+            <div class="side-item__emoji">🥤</div>
+            <div class="side-item__name">Canned Drinks</div>
+            <div class="side-item__desc">Assorted canned sodas</div>
+            <div class="side-item__price">$2.40</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ORDER CTA -->
+      <div class="cta-banner" style="border-radius: 16px; margin-top: 0;">
+        <h2>Ready to Suit Up?</h2>
+        <p>Order online for pickup or delivery — or come dine in and meet Darth Vader.</p>
+        <div>
+          <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--accent">Order Online Now</a>
+          <a href="https://www.doordash.com/store/hollyfood-south-ogden-28176744/" target="_blank" rel="noopener" class="btn btn--outline">DoorDash</a>
+          <a href="https://www.ubereats.com/store/hollyfood/5KSA_BNISoWY7PL07afsSw" target="_blank" rel="noopener" class="btn btn--outline">Uber Eats</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="logo">HOLLY<span>FOOD</span></span>
+          <p>South Ogden's superhero burger joint. Fighting hunger with fresh, never-frozen beef and unforgettable flavors since 2024.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener">📘 Facebook</a>
+            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener">📸 Instagram</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="visit.html">Visit Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <p>Mon – Wed: 11am – 8pm<br/>Thu – Sat: 11am – 9pm<br/>Sunday: Closed</p>
+          <h4 class="mt-lg">Contact</h4>
+          <p><a href="tel:3854650073">(385) 465-0073</a><br/>1706 E 5600 S<br/>South Ogden, UT 84403</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Hollyfood LLC. All rights reserved.</span>
+        <span>📍 1706 E 5600 S, South Ogden, UT 84403</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
