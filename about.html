@@ -4,209 +4,240 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Story — Hollyfood | South Ogden's Superhero Burger Bar</title>
-  <meta name="description" content="Meet Francisco Tobar and discover how Hollyfood brought South Ogden a superhero-themed burger experience unlike anything else in Utah. Fresh beef, pop culture vibes, and a 100/100 health score." />
+  <meta name="description" content="Meet Francisco Tobar, the Chilean-born dreamer behind Hollyfood. A burger bar built on passion for cinema, incredible food, and welcoming every guest like family." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">HOLLY<span>FOOD</span></a>
-      <ul class="navbar__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html" class="active">Our Story</a></li>
-        <li><a href="visit.html">Visit Us</a></li>
-      </ul>
-      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary navbar__order-btn">Order Online</a>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Hollyfood Home">
+        <div class="nav-logo-icon">H</div>
+        <span class="nav-logo-text">Holly<span>food</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html" class="active">About</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="visit.html#order" class="nav-cta">Order Now</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="navbar__mobile-menu" id="mobileMenu">
+    <div class="nav-mobile" id="nav-mobile">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="about.html" class="active">Our Story</a>
+      <a href="about.html" class="active">About</a>
       <a href="visit.html">Visit Us</a>
-      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary">Order Online</a>
+      <a href="visit.html#order">Order Now</a>
     </div>
   </nav>
 
-  <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
-    <h1>Behind the Mask</h1>
-    <p>Every great hero has an origin story. Ours started with a dream, a blank canvas of a former cake shop, and a life-size Darth Vader.</p>
-  </section>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AU_ZVEEj7m-h0Lt8dqNLTUphCASXgLUWMFmsSHJO5ABBeLmmwn6jHqXeRgItdJHXfaoIBhb68NVdyJvliFEZlMJT8x740vgqNe171f6usYi_kY4iKG_ZXOQoI13HkRKZFP7G6V60nFOqj4i7euJ-Ux_oiIZ7eMnr1lHco7IGD_hSmiGx7BtDRGe0pLbuAmPEOB1QdamK3uRhzhQx8ykgfvhY2WvS_qei3DdoH1E8POWN28gUxf1N7qDEMXe_RKYp8y9QgTtbeyfh9Txs2veJz621uLJz060DXwrccublQUW3gEABWwqiVXnhoy74qBHZ-yX3abvXRTB9qRbCvt3QgT-mkyWbqU7j1wVK_t_UU3kQGzPhZJMQ9N8kNLLh8bhIcGEOLXPYdH_D78JV2XaMLp4UNHkyp5wuhhxsbpV-9mBnof61b3m_v7voULd6f3gOKA&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts'); background-position: center;"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="subheading">The Story Behind the Burger</span>
+      <h1>Our <span class="text-accent">Story</span></h1>
+      <p>From Chile to South Ogden — built with passion, served with heart.</p>
+    </div>
+  </div>
 
-  <!-- ===== THE ORIGIN STORY ===== -->
-  <section class="section section--mid">
+  <!-- THE STORY -->
+  <section>
     <div class="container">
-      <div class="story-section">
-
-        <div class="story-block">
-          <div class="story-block__img">
-            <!-- Add your photo here: Photo of Francisco Tobar, owner of Hollyfood -->
-            🦸‍♂️ Francisco Tobar<br/>Founder &amp; Owner
-          </div>
-          <div class="story-block__text">
-            <h3>The Hero Behind the Counter</h3>
-            <p>Francisco Tobar came to South Ogden with a single mission: to create a dining experience that was about more than just food. A former manager at Café Rio and an immigrant from Chile with a passion for cinema and comic books, Francisco spent years dreaming of a restaurant that would make guests feel like they'd stepped into their favorite universe.</p>
-            <p>In April 2024, that dream became reality. Hollyfood opened its doors in the former home of Lovee's Cakes — and transformed it into something the Wasatch Front had never seen before.</p>
+      <div class="grid-2" style="gap: 4rem; align-items: center;">
+        <div class="reveal">
+          <span class="subheading">The Beginning</span>
+          <h2>A Dream Named <span class="text-accent">After Hollywood</span></h2>
+          <div class="accent-divider" style="margin: 1rem 0;"></div>
+          <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 1.25rem;">
+            Francisco Tobar grew up in Chile with two great loves: cinema and food. As a radio announcer and medical center owner, he built a life rooted in storytelling and community. But the dream of bringing those two passions together into one place never left him.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 1.25rem;">
+            After immigrating to Utah, Francisco spent two years running a Café Rio location — learning the rhythms of American restaurant life from the inside. Then came the moment he'd been building toward: opening his own place.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.9;">
+            He named it <strong style="color: var(--color-text);">Hollyfood</strong> — a play on Hollywood. Not just a burger joint, but a cinematic experience. A room where every wall tells a story, every burger has a name, and every guest walks away feeling like they've been part of something special.
+          </p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="photo-card card" style="height: 480px;">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AU_ZVEFs0b_hEJSyO568Z027lmH6Q72-VkVWaJH-JS2U27RDVM0ADinQFK7znQ4HUd-ZS5IhlyfK_xcB2_T_LYKC4fcQMXhN8o7NN3d2NxYmI4Pc13ykVI6DnGf5pdchDVbC5yeLmd-XC0lZZIpUYWFCrPJeufmELZdbz7qodJUiHIr50axbSiwG5n4t0CbGolhYRKZ87_9ZR74IGBL06CzEVnhL8cnjbNscf-MsgGOvCc_cU97ioX1rnrhSdGPjey8d06btXofBudGnFTZsGGXrcnlnA5SUbzWq-IAZc2ZgAmSKhcLb5Ls5G-QskYsIuxi_wps7Hs-WL3i3uBo_1V5WcCATDC03CvqPlLnfmGygwyRIycyoRgRoI4q9KSzHJs2wo8rLaWLeKQICbodCrvPOQxsAUMf94xqjcVadvVJfmVb8h7_R&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="Hollyfood's superhero and movie memorabilia atmosphere"
+              style="width:100%; height:100%; object-fit: cover;"
+            />
           </div>
         </div>
-
-        <div class="story-block">
-          <div class="story-block__text">
-            <h3>The Mission: Sell an Experience</h3>
-            <p>"We're not just selling a burger," Francisco says. "We're selling an experience." And he means it. Every square inch of Hollyfood has been deliberately crafted to transport guests into another world — one where the walls are alive with posters, figurines, and memorabilia from the biggest movies and comics ever made.</p>
-            <p>A life-size Darth Vader stands guard near the front counter. Two working vintage Pac-Man arcade machines hum in the corner. Captain America, Ghostbusters, Star Wars, Harry Potter, and Venom claim every wall. Even the burgers wear costumes — red buns for the American Patriot, dark buns for the Symbiote, green buns for the Incredible Green.</p>
-          </div>
-          <div class="story-block__img">
-            <!-- Add your photo here: Interior shot showing superhero decor, posters, figurines, memorabilia -->
-            🎮 🦸 🎬<br/>The most epic dining room<br/>in South Ogden
-          </div>
-        </div>
-
-        <div class="story-block">
-          <div class="story-block__img">
-            <!-- Add your photo here: Close-up of a Hollyfood burger showing the colored bun and fresh ingredients -->
-            🍔 Fresh. Never Frozen.<br/>100/100 Health Score.
-          </div>
-          <div class="story-block__text">
-            <h3>The Craft: Fresh. Always.</h3>
-            <p>The theatrics would mean nothing without great food. That's why Francisco insists on using fresh, never-frozen beef for every single burger. The buns are made in-house, sculpted to match the character each burger represents. The result? A burger that looks like a movie prop and tastes like it belongs in the final scene.</p>
-            <p>Hollyfood earned a perfect 100/100 health inspection score — a testament to the team's commitment to quality, cleanliness, and craftsmanship. This isn't a gimmick. This is a real restaurant, with real heart, serving real food.</p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ===== WHAT MAKES US DIFFERENT ===== -->
-  <section class="section">
-    <div class="container">
-      <div class="section__header">
-        <h2>Why Hollyfood?</h2>
-        <p>There are plenty of burger joints. There's only one Hollyfood.</p>
-      </div>
-      <div class="features-grid">
-
-        <div class="feature-card">
-          <div class="feature-card__icon">🥩</div>
-          <h4>Fresh, Never Frozen</h4>
-          <p>Every patty is made from fresh beef — never frozen. You can taste the difference in every single bite.</p>
+  <!-- MISSION QUOTE -->
+  <section class="bg-surface" style="padding: 4rem 0;">
+    <div class="container text-center">
+      <div class="reveal">
+        <div style="font-size: 4rem; margin-bottom: 1rem; color: var(--color-accent);">"</div>
+        <blockquote style="font-family: var(--font-heading); font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.2; color: var(--color-text); max-width: 800px; margin: 0 auto;">
+          We want to give people the best experience in their life.
+        </blockquote>
+        <div style="font-family: var(--font-subheading); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-text-muted); margin-top: 1.5rem;">
+          — Francisco Tobar, Founder &amp; Owner
         </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">🎨</div>
-          <h4>House-Made Buns</h4>
-          <p>Our signature colored buns are crafted in-house, inspired by your favorite heroes and villains. Every burger is a work of art.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">🦸</div>
-          <h4>Superhero Atmosphere</h4>
-          <p>A life-size Darth Vader, vintage Pac-Man games, walls covered in pop culture — dining here is an experience you'll tell everyone about.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">💯</div>
-          <h4>100/100 Health Score</h4>
-          <p>A perfect health inspection score. We take quality and cleanliness as seriously as we take the superhero theme.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">👨‍👩‍👧‍👦</div>
-          <h4>Family Friendly</h4>
-          <p>Kids go wild for the arcade games and themed burgers. Parents go wild for the food. Win-win for everyone.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-card__icon">🌎</div>
-          <h4>Community Roots</h4>
-          <p>Francisco built Hollyfood to be part of the South Ogden community — a local spot with big dreams and even bigger burgers.</p>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ===== GALLERY TEASER ===== -->
-  <section class="section section--mid">
+  <!-- THE PLACE -->
+  <section>
     <div class="container">
-      <div class="section__header">
-        <h2>See It for Yourself</h2>
-        <p>Photos don't do it justice — but they're a good start.</p>
-      </div>
-      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 700px; margin: 0 auto;">
-        <!-- Add your photos here: Gallery of restaurant photos -->
-        <div style="aspect-ratio: 1; background: var(--color-mid); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-muted); font-size: 0.85rem; text-align: center; padding: 16px; border: 1px solid rgba(255,255,255,0.06);"><!-- Add photo: American Patriot burger close-up --></div>
-        <div style="aspect-ratio: 1; background: var(--color-mid); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-muted); font-size: 0.85rem; text-align: center; padding: 16px; border: 1px solid rgba(255,255,255,0.06);"><!-- Add photo: Symbiote burger with bacon tongue --></div>
-        <div style="aspect-ratio: 1; background: var(--color-mid); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-muted); font-size: 0.85rem; text-align: center; padding: 16px; border: 1px solid rgba(255,255,255,0.06);"><!-- Add photo: Interior showing Darth Vader figure --></div>
-        <div style="aspect-ratio: 1; background: var(--color-mid); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--color-muted); font-size: 0.85rem; text-align: center; padding: 16px; border: 1px solid rgba(255,255,255,0.06);"><!-- Add photo: Vintage Pac-Man arcade games --></div>
-      </div>
-      <div class="text-center mt-xl">
-        <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener" class="btn btn--accent">See More on Facebook</a>
-        <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener" class="btn btn--outline">Follow on Instagram</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section class="cta-banner">
-    <div class="container">
-      <h2>Ready to Join the Mission?</h2>
-      <p>Come taste the legend for yourself. The heroes are waiting.</p>
-      <div>
-        <a href="menu.html" class="btn btn--accent">See the Menu</a>
-        <a href="visit.html" class="btn btn--outline">Get Directions</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <span class="logo">HOLLY<span>FOOD</span></span>
-          <p>South Ogden's superhero burger joint. Fighting hunger with fresh, never-frozen beef and unforgettable flavors since 2024.</p>
-          <div class="footer__social">
-            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener">📘 Facebook</a>
-            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener">📸 Instagram</a>
+      <div class="grid-2" style="gap: 4rem; align-items: center;">
+        <div class="reveal">
+          <div class="photo-card card" style="height: 420px;">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AU_ZVEEyc70h1e0kKJJ5l8AM0rlRDGQjcf7qfzo779kQBWqLG2JdYEStk17NHGWI4IGnJoZxsjQXHTfrWTbpUBJu2LPTlQB3IKrpqyysqkAGR5IUVYH_H50SBQ3XX8q6VLMvkaXhGZt9iEuzA3eehJtrGIHcoX0aNWaxnSA-xOIGvFQBcN6C9RENPaUlP6HWgpQW8QdGzqJJtt5cksOb91smiaPt-4pld05D5pVNsgxebPjGF565pOmT9q6D1iJn_NtZxxXYX9c_9ml-ud2Crwz1Tw3IVJYPpfWIxNp9Vy72iug55cYVomECyMgtVAp3IIxHBhbcHOqvKBSxzAUls6WwRmaXY_mUpW8B9FwKJ_BY__tKMEXs3K8a7reVtMexcxPpTCCk8hks1QtSTF2OlbewoTlan30cB3yr574at-iZPzcXdzTKuiX1fzmcAc44zJYX&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="Hollyfood food and interior"
+              style="width:100%; height:100%; object-fit:cover;"
+            />
           </div>
         </div>
-        <div class="footer__col">
+        <div class="reveal reveal-delay-2">
+          <span class="subheading">The Atmosphere</span>
+          <h2>Step Inside the <span class="text-accent">Universe</span></h2>
+          <div class="accent-divider" style="margin: 1rem 0;"></div>
+          <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 1.25rem;">
+            Hollyfood is an eight-table burger bar that doubles as a gallery of pop culture history. The walls are covered with original superhero artwork, movie posters, framed figurines, and comic book panels collected and curated by Francisco himself.
+          </p>
+          <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 1.5rem;">
+            A life-size Darth Vader stands guard. Captain America's shield hangs overhead. Harry Potter and Ghostbusters keep the peace. And two fully-working vintage Pac-Man arcade games are free to play while you wait for your order.
+          </p>
+          <div class="grid-2" style="gap: 1rem;">
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1rem; text-align: center;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🦸</div>
+              <div style="font-family: var(--font-subheading); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted);">Superhero Art &amp; Memorabilia</div>
+            </div>
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1rem; text-align: center;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🕹️</div>
+              <div style="font-family: var(--font-subheading); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted);">Free Pac-Man Arcade</div>
+            </div>
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1rem; text-align: center;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🎬</div>
+              <div style="font-family: var(--font-subheading); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted);">Star Wars &amp; Harry Potter</div>
+            </div>
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 1rem; text-align: center;">
+              <div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🍔</div>
+              <div style="font-family: var(--font-subheading); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted);">Made Fresh Every Order</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="bg-surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="subheading">What Our Guests Say</span>
+        <h2>The <span class="text-accent">Hollyfood</span> Effect</h2>
+        <div class="accent-divider"></div>
+        <p>4.9 stars. 418+ reviews. And a community that keeps coming back.</p>
+      </div>
+      <div class="grid-2">
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"This place is a hidden gem. When we arrived, we were greeted by the owner, Francisco. He introduced himself to us and went over the menu with us. I had the Lucifer burger and my husband had the Hannibal. Seriously the best burger! The cheese sauce on these burgers was amazing! They were cooked to perfection."</p>
+          <div class="review-author">Steph M. — Google Review</div>
+        </div>
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The owner is one of the nicest people you'll meet. It is obvious that he is passionate about movies and food. You can see how much work and heart he's put into the restaurant. The food is solid and the prices reasonable. Hollywood has a lot of heart and it's worth a visit!"</p>
+          <div class="review-author">Ethan H. — Google Review</div>
+        </div>
+        <div class="review-card reveal reveal-delay-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"My family came here to check out the fun themed atmosphere. All 5 of us got a different item off the menu and we all loved our food. The decor was fun and we enjoyed walking around and looking at it all. The music went with all the themes and there may have been a sing along!"</p>
+          <div class="review-author">April K. — Google Review</div>
+        </div>
+        <div class="review-card reveal reveal-delay-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The food absolutely delivered. The burger patties were well-seasoned, giving each bite a rich, savory flavor. The French fries were perfectly crispy with an incredible seasoning that made them hard to stop eating. We also played some nostalgic arcade games free of charge — a fun, retro vibe."</p>
+          <div class="review-author">Jennifer T. — Google Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-strip reveal">
+    <div class="container">
+      <h2>Come Meet the Team</h2>
+      <p>Francisco and the Hollyfood crew are ready to welcome you. Come hungry.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem;">
+        <a href="visit.html" class="btn" style="background:#fff; color: var(--color-accent);">Get Directions</a>
+        <a href="menu.html" class="btn btn-outline">View the Menu</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Holly<span>food</span></h3>
+          <p>South Ogden's superhero burger bar. Fresh burgers, legendary atmosphere, and a welcome that feels like home.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener" title="Facebook">f</a>
+            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener" title="Instagram">ig</a>
+          </div>
+        </div>
+        <div class="footer-col">
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
             <li><a href="about.html">Our Story</a></li>
             <li><a href="visit.html">Visit Us</a></li>
           </ul>
         </div>
-        <div class="footer__col">
-          <h4>Hours</h4>
-          <p>Mon – Wed: 11am – 8pm<br/>Thu – Sat: 11am – 9pm<br/>Sunday: Closed</p>
-          <h4 class="mt-lg">Contact</h4>
-          <p><a href="tel:3854650073">(385) 465-0073</a><br/>1706 E 5600 S<br/>South Ogden, UT 84403</p>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <address>
+            1706 E 5600 S<br />
+            South Ogden, UT 84403<br /><br />
+            <a href="tel:+13854650073">(385) 465-0073</a><br /><br />
+            Mon–Sat: 11 AM – 8 PM<br />
+            Sunday: Closed
+          </address>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>© 2025 Hollyfood LLC. All rights reserved.</span>
-        <span>📍 1706 E 5600 S, South Ogden, UT 84403</span>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hollyfood LLC. All rights reserved.</p>
+        <p>A place for <span style="color: var(--color-accent);">everyone</span>.</p>
       </div>
     </div>
   </footer>
 
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
+    const toggle = document.getElementById('nav-toggle');
+    const mobile = document.getElementById('nav-mobile');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      mobile.classList.toggle('open');
     });
+    window.addEventListener('scroll', () => {
+      document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
