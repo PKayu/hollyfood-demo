@@ -3,232 +3,381 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu — Hollyfood | Superhero Burgers South Ogden, UT</title>
-  <meta name="description" content="Explore Hollyfood's full menu: hero-themed burgers, sides, and drinks. Fresh, never-frozen beef with unique colored buns inspired by Marvel, DC &amp; Star Wars. South Ogden, UT." />
+  <title>Menu — Hollyfood | South Ogden's Superhero Burger Bar</title>
+  <meta name="description" content="Explore the Hollyfood menu — superhero-named burgers, crispy salchipapas, chicken tenders and more. Every meal includes fries and a drink. South Ogden, UT." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">HOLLY<span>FOOD</span></a>
-      <ul class="navbar__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html" class="active">Menu</a></li>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="visit.html">Visit Us</a></li>
-      </ul>
-      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary navbar__order-btn">Order Online</a>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Hollyfood Home">
+        <div class="nav-logo-icon">H</div>
+        <span class="nav-logo-text">Holly<span>food</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="visit.html">Visit Us</a>
+        <a href="visit.html#order" class="nav-cta">Order Now</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="navbar__mobile-menu" id="mobileMenu">
+    <div class="nav-mobile" id="nav-mobile">
       <a href="index.html">Home</a>
       <a href="menu.html" class="active">Menu</a>
-      <a href="about.html">Our Story</a>
+      <a href="about.html">About</a>
       <a href="visit.html">Visit Us</a>
-      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary">Order Online</a>
+      <a href="visit.html#order">Order Now</a>
     </div>
   </nav>
 
-  <!-- ===== MENU HERO ===== -->
-  <section class="menu-hero">
-    <h1>The Mission Dossier</h1>
-    <p>Every hero needs fuel. Choose your weapons wisely — all burgers come loaded with fries and a drink.</p>
-    <div class="menu-note">
-      <strong>🥩 Fresh Promise:</strong> All beef is fresh, never frozen. House-made buns crafted in-house. Health score: <strong>100/100</strong>.
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AU_ZVEHyDAeQSkrW42ca7QxtLK33MeHqkKr-C2gR4oyfb66Rl2jogKBt5_15aEQNhJ_V2gKA0YIKxh7q0Q3rL9G_3YeSkclYcpW0z6cuDZRgd_7arxWkfdywE7VmYM4WHWY3FnWL1j6jP_5qioTvKP3Npu5kNahT5G6x6J7_yjDpgayIXJiAIz7Xvj6065CWUij2tLIHqKqdiLf6yR0pHWXDbV58_MmfBXOWcB6mcea62Ua7Jsn8vFwbZM_p0-0hSe28gMFEdMuWE-8tGvbD1sh1T_PenKx_oRIEgyKq8VGeYR_9Lg&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts'); background-position: center 40%;"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="subheading">The Lineup</span>
+      <h1>The <span class="text-accent">Menu</span></h1>
+      <p>Every dish is a character. Every bite, a scene.</p>
+    </div>
+  </div>
+
+  <!-- MENU INTRO BANNER -->
+  <div class="bg-surface" style="padding: 1.5rem 0;">
+    <div class="container text-center">
+      <p style="font-family: var(--font-subheading); font-size: 1rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted);">
+        🍔 All burgers include <span style="color: var(--color-gold);">fries &amp; a soft drink</span> &bull; Made fresh to order &bull; Open Mon–Sat 11 AM – 8 PM
+      </p>
+    </div>
+  </div>
+
+  <!-- BURGERS -->
+  <section>
+    <div class="container">
+      <div class="reveal">
+        <h2 class="menu-category-title">The Burgers</h2>
+      </div>
+      <div class="grid-3">
+
+        <!-- American Patriot -->
+        <div class="menu-item-card reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEECdNCHZw3EZGaO9l9zt4xjTF1kuxlvA2QF__jjmhi4NZyPNE-Jl9w-irYJYmhhoLil9EmJyuS_rOFeZwMk9JzSxHM7sSD7jAYnAQoOoKt_7-UR0tULlBWQbkrSELX1ztHz8AaVvIKWuKxRaFjIK1wTGWDHSTyPY--p6GHz6-SKAdqcMW-9QnP_F__Y1LelHZ6UiZcc0382jlfVDeegZekDAbWTomIevgY9KfZWYex6SoAPuhS8jHC-kFd3DnPWQVr05hShuyO7R9DPbYeoV4TlEB-8LAy-3sZiIpoohTUTbhY1Wt77XvVxyxkLmfjP6aaw8hWYr4edCQiF_QcL-CIDJgErulEWE7ccAin9M1r3R2gIdBzuO6Af3PDW5r5xChQLp5o7TMM9G7U9BYMQhlcvxrD2rZzn844G6uFo0EA3AgflEx_Gsk3fH8mk1bkb&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="American Patriot Burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="tag" style="margin-bottom: 0.6rem;">Classic Hero</div>
+            <div class="menu-item-name">American Patriot</div>
+            <div class="menu-item-desc">American cheese, pickles, tomatoes, onion, house sauce. Inspired by the shield-bearer himself — Captain America.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$13.40</span>
+              <span style="color: var(--color-text-muted); font-size: 0.75rem;">+ fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Symbiote -->
+        <div class="menu-item-card reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEEyc70h1e0kKJJ5l8AM0rlRDGQjcf7qfzo779kQBWqLG2JdYEStk17NHGWI4IGnJoZxsjQXHTfrWTbpUBJu2LPTlQB3IKrpqyysqkAGR5IUVYH_H50SBQ3XX8q6VLMvkaXhGZt9iEuzA3eehJtrGIHcoX0aNWaxnSA-xOIGvFQBcN6C9RENPaUlP6HWgpQW8QdGzqJJtt5cksOb91smiaPt-4pld05D5pVNsgxebPjGF565pOmT9q6D1iJn_NtZxxXYX9c_9ml-ud2Crwz1Tw3IVJYPpfWIxNp9Vy72iug55cYVomECyMgtVAp3IIxHBhbcHOqvKBSxzAUls6WwRmaXY_mUpW8B9FwKJ_BY__tKMEXs3K8a7reVtMexcxPpTCCk8hks1QtSTF2OlbewoTlan30cB3yr574at-iZPzcXdzTKuiX1fzmcAc44zJYX&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="The Symbiote Burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="tag" style="margin-bottom: 0.6rem;">Fan Favorite</div>
+            <div class="menu-item-name">The Symbiote</div>
+            <div class="menu-item-desc">American &amp; Cheddar cheese, crispy bacon, caramelized onion, house sauce. Dark, bold, and impossible to resist — just like Venom.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$13.40</span>
+              <span style="color: var(--color-text-muted); font-size: 0.75rem;">+ fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dark Justice -->
+        <div class="menu-item-card reveal reveal-delay-3">
+          <div class="menu-item-img">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEGwlp0s_E0QKUq4NAmHpON1Ock7uQkCO9CqUzmsp54nj3t34GuG3EeAFXAd_G-rlJD_sksnK2QkdaYaRSOFTds2tz5sE1unC-G97mpGstBKF44ppr2eiFDXAGKCNdx0ZAhNXG6tCaD-UHz1q2i0oQf5oRcj4nfK4W9bBJFrsqLbQxExW_l6zLccYyQ0KI0Qy_E7Z89LLR7Vg3lx6v3rcqfw-HSWYawagVcM-xLqXY6MF_HXYNHQ1BytPugESVK4FCMGpJD_pMS0dqnGiEfk3-3b8duFuIqt2K5phcMaOE8X-mhemFvVKji3bACdOBq7vem96DG-ZVwMvdlX4Jw9dVKz8pe6W7ELR1Q8N2PHP1YhE7wVFe3LXAPN0kkKhqabUUBt4O2BetSfi8eXezrpEqa8VTQh7sqzr0bvqxsoThtxntlSCwn1dC1eMywfen9Y&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="Dark Justice Burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="tag" style="margin-bottom: 0.6rem;">The Dark One</div>
+            <div class="menu-item-name">Dark Justice</div>
+            <div class="menu-item-desc">Cheddar cheese, pickles, caramelized onion, tomatoes, house sauce. As complex and layered as Gotham's protector.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$13.40</span>
+              <span style="color: var(--color-text-muted); font-size: 0.75rem;">+ fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Incredible Green -->
+        <div class="menu-item-card reveal reveal-delay-1">
+          <div class="menu-item-img">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEECdNCHZw3EZGaO9l9zt4xjTF1kuxlvA2QF__jjmhi4NZyPNE-Jl9w-irYJYmhhoLil9EmJyuS_rOFeZwMk9JzSxHM7sSD7jAYnAQoOoKt_7-UR0tULlBWQbkrSELX1ztHz8AaVvIKWuKxRaFjIK1wTGWDHSTyPY--p6GHz6-SKAdqcMW-9QnP_F__Y1LelHZ6UiZcc0382jlfVDeegZekDAbWTomIevgY9KfZWYex6SoAPuhS8jHC-kFd3DnPWQVr05hShuyO7R9DPbYeoV4TlEB-8LAy-3sZiIpoohTUTbhY1Wt77XvVxyxkLmfjP6aaw8hWYr4edCQiF_QcL-CIDJgErulEWE7ccAin9M1r3R2gIdBzuO6Af3PDW5r5xChQLp5o7TMM9G7U9BYMQhlcvxrD2rZzn844G6uFo0EA3AgflEx_Gsk3fH8mk1bkb&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="Incredible Green Burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="tag" style="margin-bottom: 0.6rem;">Hulk Smash</div>
+            <div class="menu-item-name">Incredible Green</div>
+            <div class="menu-item-desc">American cheese, pickles, onion, lettuce, tomatoes, house sauce. You won't like it when it's angry — but you'll love it on your plate.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$13.40</span>
+              <span style="color: var(--color-text-muted); font-size: 0.75rem;">+ fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alter Ego -->
+        <div class="menu-item-card reveal reveal-delay-2">
+          <div class="menu-item-img">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEFs0b_hEJSyO568Z027lmH6Q72-VkVWaJH-JS2U27RDVM0ADinQFK7znQ4HUd-ZS5IhlyfK_xcB2_T_LYKC4fcQMXhN8o7NN3d2NxYmI4Pc13ykVI6DnGf5pdchDVbC5yeLmd-XC0lZZIpUYWFCrPJeufmELZdbz7qodJUiHIr50axbSiwG5n4t0CbGolhYRKZ87_9ZR74IGBL06CzEVnhL8cnjbNscf-MsgGOvCc_cU97ioX1rnrhSdGPjey8d06btXofBudGnFTZsGGXrcnlnA5SUbzWq-IAZc2ZgAmSKhcLb5Ls5G-QskYsIuxi_wps7Hs-WL3i3uBo_1V5WcCATDC03CvqPlLnfmGygwyRIycyoRgRoI4q9KSzHJs2wo8rLaWLeKQICbodCrvPOQxsAUMf94xqjcVadvVJfmVb8h7_R&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="Alter Ego Burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="tag" style="margin-bottom: 0.6rem;">The Classic</div>
+            <div class="menu-item-name">Alter Ego</div>
+            <div class="menu-item-desc">American cheese, lettuce, tomatoes, house sauce. Simple, honest, and ready to save the day. Every hero has a secret identity.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$13.40</span>
+              <span style="color: var(--color-text-muted); font-size: 0.75rem;">+ fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lecter -->
+        <div class="menu-item-card reveal reveal-delay-3">
+          <div class="menu-item-img">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEEmydpCON7E0C_WXVNdJjWvzF-RGOc97ykavRQOEbVgMfyzSOBsdb8-11H9oVlo7G6JUNNjPVBVF37p0jUaPqA-t_BNShCNHJ5HzY5pMLnlBwxi4lNLrLp2jOxmlgZ02e-PsUYYYrsQrEWpcwKyyqbotvmiQmhChPZEz3XyIOwK7r9pUgK62DRc9Eb20TG1YzzzrI0wYBFA0aD8W_16w1MdSma_dhpna7OQj3Js9s5pda1HHAxcqrY2aEwf5D3ImiTipOhrEnQqs9LjWaA3CbjScfXPrUD5jwV3FOfoFXtgiL9mFGWiDCkckFLSIlrYhiwBr1sJ6HhXnaUbLUhi4upUG1-QFbde1X2XIis_SiWo_lVw-_6mrAkn1niVCBnLYC_0q7ANR2Hor7wD2gjx5_S3veoVVLg1FyACrSwZduOnpkhbeTom_w1Zl92znA&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="The Lecter Burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="tag tag-gold" style="margin-bottom: 0.6rem;">Extra Bold</div>
+            <div class="menu-item-name">The Lecter</div>
+            <div class="menu-item-desc">Double bacon, double cheese, pickles, and rich cheese sauce. An experience you won't soon forget — and won't want to.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$14.90</span>
+              <span style="color: var(--color-text-muted); font-size: 0.75rem;">+ fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hannibal — spans full width on small, normal on desktop -->
+        <div class="menu-item-card reveal reveal-delay-1" style="grid-column: 1 / -1; max-width: 480px; margin: 0 auto; width: 100%;">
+          <div class="menu-item-img" style="height: 280px;">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AU_ZVEGRvx-LsA1MR21NnO9nN8W7s0yB3E1eLJIlwPGvDmAzzaVq7odbVr5edQZxaCSWcKouwq64u855ucN6J56aZ_f9t5UOGyFYSos-ISkxEWF79gcjcBLT1ymnri2s_aoo7QKZXBUb6t1-Y0mX02YXLnJa4ZOhHECNciC0CKgsgiHd13aoA2nTX_-qXUPYwDKCnW3ifdjvlRPG4m_Mk0K9hMCQGvcZzayjiWfIpF7qJ0vqyOwYDc1f-q8ouTa12qYmjp6GcoGhMMgIJfD9CPB_opzzbsDK5ujhOzDeChsZZiPivyLnkZWc0dp_fMXj9EZKCrHrBrj25lrPk47h4N6sxW6dRP9nJAVkYBdw0PtAy0z8bw3QtUwJvRrigucnRoF7f9oyTv6PAZjZpz74fGTE--gWyfuQg49bnzctEd2xOEMvInc&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="The Hannibal — Hollyfood's monster double burger"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.6rem;">
+              <span class="tag tag-gold">The Beast</span>
+              <span class="tag">Most Popular</span>
+            </div>
+            <div class="menu-item-name" style="font-size: 2rem;">The Hannibal</div>
+            <div class="menu-item-desc">Double burger, double bacon, triple cheese, pickles, and rich cheese sauce. The biggest, boldest burger on the menu. Not for the faint of heart — or appetite.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price" style="font-size: 2.2rem;">$16.90</span>
+              <span style="color: var(--color-text-muted); font-size: 0.8rem;">Includes fries &amp; drink</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- ===== MENU CONTENT ===== -->
-  <section class="section">
+  <!-- SIDES & EXTRAS -->
+  <section class="bg-surface">
     <div class="container">
-
-      <!-- HERO BURGERS -->
-      <div class="menu-category">
-        <div class="menu-category__title">⚡ Hero Burgers</div>
-        <p class="text-accent" style="margin-bottom: 24px; font-size: 0.95rem;">All burgers include fries &amp; a soft drink</p>
-        <div class="menu-grid">
-
-          <div class="menu-item">
-            <div class="menu-item__emoji">🔴⭐</div>
-            <div class="menu-item__name">American Patriot</div>
-            <div class="menu-item__hero-name">Captain America Tribute</div>
-            <div class="menu-item__desc">American cheese, pickles, tomatoes, onion, house sauce. The signature red bun — shaped like the shield, built for champions.</div>
-            <div class="menu-item__price">$13.40</div>
-            <div class="menu-item__note">★ Fan Favorite</div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item__emoji">🖤🕷️</div>
-            <div class="menu-item__name">Symbiote</div>
-            <div class="menu-item__hero-name">Venom Tribute</div>
-            <div class="menu-item__desc">American &amp; cheddar cheese, bacon, caramelized onion, house sauce. Dark bun with cheese "eyes" — the dark side never tasted this good.</div>
-            <div class="menu-item__price">$13.40</div>
-            <div class="menu-item__note">★ Fan Favorite</div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item__emoji">💚🔥</div>
-            <div class="menu-item__name">Incredible Green</div>
-            <div class="menu-item__hero-name">Hulk Tribute</div>
-            <div class="menu-item__desc">American cheese, pickles, onion, lettuce, tomatoes, house sauce. Smash-level flavor on a vibrant green bun. You'll want seconds.</div>
-            <div class="menu-item__price">$13.40</div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item__emoji">🖤⚡</div>
-            <div class="menu-item__name">Dark Justice</div>
-            <div class="menu-item__hero-name">DC Universe Tribute</div>
-            <div class="menu-item__desc">Cheddar cheese, pickles, caramelized onion, tomatoes, house sauce. A brooding, complex flavor profile — perfect for creatures of the night.</div>
-            <div class="menu-item__price">$13.40</div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item__emoji">🎭🍔</div>
-            <div class="menu-item__name">Alter Ego</div>
-            <div class="menu-item__hero-name">Classic Hero</div>
-            <div class="menu-item__desc">American cheese, lettuce, tomatoes, house sauce. The undercover hero — no costume needed when your flavors are this powerful.</div>
-            <div class="menu-item__price">$13.40</div>
-          </div>
-
-        </div>
+      <div class="reveal">
+        <h2 class="menu-category-title">Sides &amp; Extras</h2>
       </div>
+      <div class="grid-3">
 
-      <!-- BOSS LEVEL BURGERS -->
-      <div class="menu-category">
-        <div class="menu-category__title">💀 Boss Level</div>
-        <p style="color: var(--color-muted); margin-bottom: 24px; font-size: 0.95rem;">Only for the truly mighty. Challenge accepted?</p>
-        <div class="menu-grid">
-
-          <div class="menu-item menu-item--boss">
-            <div class="menu-item__emoji">🔪🧀</div>
-            <div class="menu-item__name">Lecter</div>
-            <div class="menu-item__hero-name">The Villain Upgrade</div>
-            <div class="menu-item__desc">Burger, double bacon, double cheese, pickles and cheese sauce. Evil has never tasted so magnificent.</div>
-            <div class="menu-item__price">$14.90</div>
-            <div class="menu-item__note">+ Fries &amp; Drink</div>
+        <div class="menu-item-card reveal reveal-delay-1">
+          <div class="menu-item-img" style="height: 180px;">
+            <img
+              src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AU_ZVEEj7m-h0Lt8dqNLTUphCASXgLUWMFmsSHJO5ABBeLmmwn6jHqXeRgItdJHXfaoIBhb68NVdyJvliFEZlMJT8x740vgqNe171f6usYi_kY4iKG_ZXOQoI13HkRKZFP7G6V60nFOqj4i7euJ-Ux_oiIZ7eMnr1lHco7IGD_hSmiGx7BtDRGe0pLbuAmPEOB1QdamK3uRhzhQx8ykgfvhY2WvS_qei3DdoH1E8POWN28gUxf1N7qDEMXe_RKYp8y9QgTtbeyfh9Txs2veJz621uLJz060DXwrccublQUW3gEABWwqiVXnhoy74qBHZ-yX3abvXRTB9qRbCvt3QgT-mkyWbqU7j1wVK_t_UU3kQGzPhZJMQ9N8kNLLh8bhIcGEOLXPYdH_D78JV2XaMLp4UNHkyp5wuhhxsbpV-9mBnof61b3m_v7voULd6f3gOKA&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+              alt="French Fries"
+            />
           </div>
-
-          <div class="menu-item menu-item--boss">
-            <div class="menu-item__emoji">💀🔥</div>
-            <div class="menu-item__name">Hannibal</div>
-            <div class="menu-item__hero-name">The Final Boss</div>
-            <div class="menu-item__desc">Double burger, double bacon, triple cheese, pickles and cheese sauce. This is the end-game burger. It doesn't play fair.</div>
-            <div class="menu-item__price">$16.90</div>
-            <div class="menu-item__note">+ Fries &amp; Drink • Boss-Level Challenge</div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">French Fries</div>
+            <div class="menu-item-desc">Crispy, golden, perfectly seasoned. Reviewers can't stop talking about them.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$6.60</span>
+            </div>
           </div>
-
         </div>
-      </div>
 
-      <!-- SIDES & EXTRAS -->
-      <div class="menu-category">
-        <div class="menu-category__title">🛡️ Sides &amp; Extras</div>
-        <div class="sides-grid">
-
-          <div class="side-item">
-            <div class="side-item__emoji">🍟</div>
-            <div class="side-item__name">French Fries</div>
-            <div class="side-item__desc">Crispy golden sticks of potato perfection</div>
-            <div class="side-item__price">$6.60</div>
+        <div class="menu-item-card reveal reveal-delay-2">
+          <div class="menu-item-img" style="height: 180px;">
+            <img
+              src="https://source.unsplash.com/600x360/?sausage,fries,street-food"
+              alt="Salchipapas — fries with sausage"
+            />
           </div>
-
-          <div class="side-item">
-            <div class="side-item__emoji">🍗</div>
-            <div class="side-item__name">Chicken Tenders</div>
-            <div class="side-item__desc">Tender, juicy, golden chicken strips</div>
-            <div class="side-item__price">$5.90</div>
+          <div class="menu-item-body">
+            <div class="tag tag-gold" style="margin-bottom: 0.5rem;">Must Try</div>
+            <div class="menu-item-name">Salchipapas</div>
+            <div class="menu-item-desc">A South American classic — crispy fries topped with sliced sausage. A nod to Francisco's Chilean roots.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$7.60</span>
+            </div>
           </div>
-
-          <div class="side-item">
-            <div class="side-item__emoji">🔥</div>
-            <div class="side-item__name">Nuggets</div>
-            <div class="side-item__desc">Bite-sized pieces of tender, juicy chicken</div>
-            <div class="side-item__price">$6.90</div>
-          </div>
-
-          <div class="side-item">
-            <div class="side-item__emoji">🌭</div>
-            <div class="side-item__name">Salchipapas</div>
-            <div class="side-item__desc">French fries topped with sliced sausage — a South American classic</div>
-            <div class="side-item__price">$7.60</div>
-          </div>
-
-          <div class="side-item">
-            <div class="side-item__emoji">🥗</div>
-            <div class="side-item__name">Salad</div>
-            <div class="side-item__desc">Lettuce, tomatoes, corn, olive, pickles, ranch sauce</div>
-            <div class="side-item__price">$12.90</div>
-          </div>
-
-          <div class="side-item">
-            <div class="side-item__emoji">🥤</div>
-            <div class="side-item__name">Canned Drinks</div>
-            <div class="side-item__desc">Assorted canned sodas</div>
-            <div class="side-item__price">$2.40</div>
-          </div>
-
         </div>
-      </div>
 
-      <!-- ORDER CTA -->
-      <div class="cta-banner" style="border-radius: 16px; margin-top: 0;">
-        <h2>Ready to Suit Up?</h2>
-        <p>Order online for pickup or delivery — or come dine in and meet Darth Vader.</p>
-        <div>
-          <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--accent">Order Online Now</a>
-          <a href="https://www.doordash.com/store/hollyfood-south-ogden-28176744/" target="_blank" rel="noopener" class="btn btn--outline">DoorDash</a>
-          <a href="https://www.ubereats.com/store/hollyfood/5KSA_BNISoWY7PL07afsSw" target="_blank" rel="noopener" class="btn btn--outline">Uber Eats</a>
+        <div class="menu-item-card reveal reveal-delay-3">
+          <div class="menu-item-img" style="height: 180px;">
+            <img
+              src="https://source.unsplash.com/600x360/?chicken,tenders,fried"
+              alt="Chicken Tenders"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Chicken Tenders</div>
+            <div class="menu-item-desc">Tender and juicy chicken strips, hand-breaded and fried golden.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$5.90</span>
+            </div>
+          </div>
         </div>
-      </div>
 
+        <div class="menu-item-card reveal reveal-delay-1">
+          <div class="menu-item-img" style="height: 180px;">
+            <img
+              src="https://source.unsplash.com/600x360/?chicken,nuggets,crispy"
+              alt="Nuggets"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Nuggets</div>
+            <div class="menu-item-desc">Tender, juicy bite-sized pieces of chicken. Perfect for sharing — or not.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$6.90</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card reveal reveal-delay-2">
+          <div class="menu-item-img" style="height: 180px;">
+            <img
+              src="https://source.unsplash.com/600x360/?salad,fresh,vegetables"
+              alt="Garden Salad"
+            />
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Fresh Salad</div>
+            <div class="menu-item-desc">Lettuce, tomatoes, corn, olives, pickles, and ranch sauce. Light but satisfying.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$12.90</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item-card reveal reveal-delay-3">
+          <div class="menu-item-img" style="height: 180px; display: flex; align-items: center; justify-content: center; background: var(--color-surface2);">
+            <div style="text-align: center; padding: 1.5rem;">
+              <div style="font-size: 3rem;">🥤</div>
+              <div style="font-family: var(--font-subheading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-top: 0.5rem;">Drinks</div>
+            </div>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-name">Canned Drinks</div>
+            <div class="menu-item-desc">Sodas to complete your meal. All burger combos include your choice of drink.</div>
+            <div class="menu-item-footer">
+              <span class="menu-price">$2.40</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <!-- ORDER CTA -->
+  <div id="order" class="cta-strip reveal">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <span class="logo">HOLLY<span>FOOD</span></span>
-          <p>South Ogden's superhero burger joint. Fighting hunger with fresh, never-frozen beef and unforgettable flavors since 2024.</p>
-          <div class="footer__social">
-            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener">📘 Facebook</a>
-            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener">📸 Instagram</a>
+      <h2>Ready to Order?</h2>
+      <p>Visit us in person or order on Uber Eats for delivery</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.25rem;">
+        <a href="https://www.ubereats.com/store/hollyfood/5KSA_BNISoWY7PL07afsSw" target="_blank" rel="noopener" class="btn" style="background:#fff; color: var(--color-accent);">Order on Uber Eats</a>
+        <a href="visit.html" class="btn btn-outline">Visit In Person</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Holly<span>food</span></h3>
+          <p>South Ogden's superhero burger bar. Fresh burgers, legendary atmosphere, and a welcome that feels like home.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener" title="Facebook">f</a>
+            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener" title="Instagram">ig</a>
           </div>
         </div>
-        <div class="footer__col">
+        <div class="footer-col">
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
             <li><a href="about.html">Our Story</a></li>
             <li><a href="visit.html">Visit Us</a></li>
           </ul>
         </div>
-        <div class="footer__col">
-          <h4>Hours</h4>
-          <p>Mon – Wed: 11am – 8pm<br/>Thu – Sat: 11am – 9pm<br/>Sunday: Closed</p>
-          <h4 class="mt-lg">Contact</h4>
-          <p><a href="tel:3854650073">(385) 465-0073</a><br/>1706 E 5600 S<br/>South Ogden, UT 84403</p>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <address>
+            1706 E 5600 S<br />
+            South Ogden, UT 84403<br /><br />
+            <a href="tel:+13854650073">(385) 465-0073</a><br /><br />
+            Mon–Sat: 11 AM – 8 PM<br />
+            Sunday: Closed
+          </address>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>© 2025 Hollyfood LLC. All rights reserved.</span>
-        <span>📍 1706 E 5600 S, South Ogden, UT 84403</span>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hollyfood LLC. All rights reserved.</p>
+        <p>A place for <span style="color: var(--color-accent);">everyone</span>.</p>
       </div>
     </div>
   </footer>
 
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
+    const toggle = document.getElementById('nav-toggle');
+    const mobile = document.getElementById('nav-mobile');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      mobile.classList.toggle('open');
     });
+    window.addEventListener('scroll', () => {
+      document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
