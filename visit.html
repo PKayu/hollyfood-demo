@@ -4,274 +4,263 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Visit Us — Hollyfood | 1706 E 5600 S, South Ogden, UT</title>
-  <meta name="description" content="Find Hollyfood at 1706 E 5600 S, South Ogden, UT 84403. Hours: Mon–Wed 11am–8pm, Thu–Sat 11am–9pm. Call (385) 465-0073 or order online for pickup and delivery." />
+  <meta name="description" content="Find Hollyfood at 1706 E 5600 S, South Ogden, UT. Open Monday–Saturday 11 AM – 8 PM. Call (385) 465-0073 or order online via Uber Eats." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <div class="navbar__inner">
-      <a href="index.html" class="navbar__logo">HOLLY<span>FOOD</span></a>
-      <ul class="navbar__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">Our Story</a></li>
-        <li><a href="visit.html" class="active">Visit Us</a></li>
-      </ul>
-      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary navbar__order-btn">Order Online</a>
-      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+  <!-- NAV -->
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Hollyfood Home">
+        <div class="nav-logo-icon">H</div>
+        <span class="nav-logo-text">Holly<span>food</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="visit.html" class="active">Visit Us</a>
+        <a href="visit.html#order" class="nav-cta">Order Now</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="navbar__mobile-menu" id="mobileMenu">
+    <div class="nav-mobile" id="nav-mobile">
       <a href="index.html">Home</a>
       <a href="menu.html">Menu</a>
-      <a href="about.html">Our Story</a>
+      <a href="about.html">About</a>
       <a href="visit.html" class="active">Visit Us</a>
-      <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--primary">Order Online</a>
+      <a href="visit.html#order">Order Now</a>
     </div>
   </nav>
 
-  <!-- ===== PAGE HERO ===== -->
-  <section class="page-hero">
-    <h1>Find Your Mission HQ</h1>
-    <p>We're at 1706 E 5600 S in South Ogden — Darth Vader is keeping an eye out for you.</p>
-  </section>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AU_ZVEGRvx-LsA1MR21NnO9nN8W7s0yB3E1eLJIlwPGvDmAzzaVq7odbVr5edQZxaCSWcKouwq64u855ucN6J56aZ_f9t5UOGyFYSos-ISkxEWF79gcjcBLT1ymnri2s_aoo7QKZXBUb6t1-Y0mX02YXLnJa4ZOhHECNciC0CKgsgiHd13aoA2nTX_-qXUPYwDKCnW3ifdjvlRPG4m_Mk0K9hMCQGvcZzayjiWfIpF7qJ0vqyOwYDc1f-q8ouTa12qYmjp6GcoGhMMgIJfD9CPB_opzzbsDK5ujhOzDeChsZZiPivyLnkZWc0dp_fMXj9EZKCrHrBrj25lrPk47h4N6sxW6dRP9nJAVkYBdw0PtAy0z8bw3QtUwJvRrigucnRoF7f9oyTv6PAZjZpz74fGTE--gWyfuQg49bnzctEd2xOEMvInc&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts'); background-position: center 60%;"></div>
+    <div class="hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="subheading">Come Hungry</span>
+      <h1>Visit <span class="text-accent">Hollyfood</span></h1>
+      <p>South Ogden's superhero burger bar is ready to welcome you.</p>
+    </div>
+  </div>
 
-  <!-- ===== VISIT INFO ===== -->
-  <section class="section section--mid">
+  <!-- MAIN INFO SECTION -->
+  <section>
     <div class="container">
-      <div class="visit-grid">
+      <div class="grid-2" style="gap: 3rem; align-items: flex-start;">
 
-        <!-- Hours -->
-        <div class="info-card">
-          <h3>🕐 Hours of Operation</h3>
-          <ul class="hours-list">
-            <li>
-              <span class="day">Monday</span>
-              <span class="time">11:00 AM – 8:00 PM</span>
-            </li>
-            <li>
-              <span class="day">Tuesday</span>
-              <span class="time">11:00 AM – 8:00 PM</span>
-            </li>
-            <li>
-              <span class="day">Wednesday</span>
-              <span class="time">11:00 AM – 8:00 PM</span>
-            </li>
-            <li>
-              <span class="day">Thursday</span>
-              <span class="time">11:00 AM – 9:00 PM</span>
-            </li>
-            <li>
-              <span class="day">Friday</span>
-              <span class="time">11:00 AM – 9:00 PM</span>
-            </li>
-            <li>
-              <span class="day">Saturday</span>
-              <span class="time">11:00 AM – 9:00 PM</span>
-            </li>
-            <li>
-              <span class="day">Sunday</span>
-              <span class="closed">Closed</span>
-            </li>
-          </ul>
+        <!-- MAP -->
+        <div class="reveal">
+          <div class="map-container" style="height: 450px;">
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts&q=Hollyfood,1706+E+5600+S,South+Ogden,UT+84403"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Hollyfood Location"
+            ></iframe>
+          </div>
+          <div style="margin-top: 1rem; text-align: center;">
+            <a
+              href="https://maps.google.com/?q=Hollyfood+1706+E+5600+S+South+Ogden+UT+84403"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+              style="width: 100%; justify-content: center;"
+            >
+              📍 Get Directions in Google Maps
+            </a>
+          </div>
         </div>
 
-        <!-- Contact -->
-        <div class="info-card">
-          <h3>📍 Find &amp; Reach Us</h3>
-          <ul class="contact-list">
-            <li>
-              <span class="contact-list__icon">📍</span>
-              <div>
-                <div class="contact-list__label">Address</div>
-                <div class="contact-list__value">
-                  1706 E 5600 S<br/>
-                  South Ogden, UT 84403
-                </div>
-              </div>
-            </li>
-            <li>
-              <span class="contact-list__icon">📞</span>
-              <div>
-                <div class="contact-list__label">Phone</div>
-                <div class="contact-list__value">
-                  <a href="tel:3854650073">(385) 465-0073</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span class="contact-list__icon">✉️</span>
-              <div>
-                <div class="contact-list__label">Email</div>
-                <div class="contact-list__value">
-                  <a href="mailto:hollyfoodllc@gmail.com">hollyfoodllc@gmail.com</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span class="contact-list__icon">📘</span>
-              <div>
-                <div class="contact-list__label">Facebook</div>
-                <div class="contact-list__value">
-                  <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener">@HollyFood.Utah</a>
-                </div>
-              </div>
-            </li>
-            <li>
-              <span class="contact-list__icon">📸</span>
-              <div>
-                <div class="contact-list__label">Instagram</div>
-                <div class="contact-list__value">
-                  <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener">@hollyfoodut</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- Map -->
-      <div class="map-placeholder">
-        <div class="map-placeholder__icon">🗺️</div>
+        <!-- DETAILS -->
         <div>
-          <strong style="color: var(--color-accent); font-family: var(--font-heading); font-size: 1.3rem; letter-spacing: 2px;">1706 E 5600 S, South Ogden, UT 84403</strong><br/><br/>
-          <a href="https://www.google.com/maps/search/?api=1&query=1706+E+5600+S+South+Ogden+UT+84403" target="_blank" rel="noopener" class="btn btn--accent" style="font-size: 1rem;">Open in Google Maps</a>
+          <!-- Hours -->
+          <div class="info-box reveal">
+            <h3>🕐 Hours</h3>
+            <div class="hours-row"><span class="hours-day">Monday</span><span class="hours-time">11:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-time">11:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time">11:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">11:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time">11:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">11:00 AM – 8:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-closed">Closed</span></div>
+          </div>
+
+          <!-- Contact -->
+          <div class="info-box reveal reveal-delay-1" style="margin-top: 1.5rem;">
+            <h3>📞 Contact &amp; Location</h3>
+            <div class="info-row">
+              <div class="info-icon">📍</div>
+              <div class="info-content">
+                <strong>Address</strong>
+                1706 E 5600 S<br />South Ogden, UT 84403
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">📞</div>
+              <div class="info-content">
+                <strong>Phone</strong>
+                <a href="tel:+13854650073" style="color: var(--color-accent);">(385) 465-0073</a>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">✉️</div>
+              <div class="info-content">
+                <strong>Email</strong>
+                <a href="mailto:hollyfoodllc@gmail.com" style="color: var(--color-accent);">hollyfoodllc@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">📘</div>
+              <div class="info-content">
+                <strong>Social Media</strong>
+                <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener" style="color: var(--color-accent);">Facebook</a>
+                &nbsp;·&nbsp;
+                <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener" style="color: var(--color-accent);">Instagram @hollyfoodut</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phone CTA -->
+          <div class="reveal reveal-delay-2" style="margin-top: 1.5rem;">
+            <a href="tel:+13854650073" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.2rem; padding: 1.1rem;">
+              📞 Call (385) 465-0073
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== ORDER OPTIONS ===== -->
-  <section class="section">
+  <!-- ORDER ONLINE -->
+  <section id="order" class="bg-surface">
     <div class="container">
-      <div class="section__header">
-        <h2>Order Your Way</h2>
-        <p>Dine in, pick up, or have the heroes delivered to your door.</p>
+      <div class="section-header reveal">
+        <span class="subheading">Can't Make It In?</span>
+        <h2>Order <span class="text-accent">Online</span></h2>
+        <div class="accent-divider"></div>
+        <p>Get Hollyfood delivered right to your door via Uber Eats.</p>
       </div>
-
-      <div style="display: grid; gap: 24px; grid-template-columns: 1fr;">
-        <!-- Dine In -->
-        <div class="info-card" style="text-align: center; border-color: rgba(244,196,48,0.3);">
-          <div style="font-size: 3rem; margin-bottom: 16px;">🦸‍♂️</div>
-          <h3 style="margin-bottom: 12px;">Dine In</h3>
-          <p style="color: var(--color-muted); max-width: 500px; margin: 0 auto 20px;">
-            The full experience — 8 tables, superhero decor everywhere, vintage Pac-Man arcade games, and Darth Vader greeting you at the door. This is where the magic happens.
+      <div style="max-width: 500px; margin: 0 auto; text-align: center;" class="reveal">
+        <div class="card" style="padding: 2.5rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">🚗</div>
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.75rem;">Uber Eats Delivery</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: 1.75rem; line-height: 1.7;">
+            Browse the full menu, order your favorites, and have South Ogden's best burgers brought right to your door.
           </p>
-          <a href="visit.html" class="btn btn--accent">Get Directions</a>
-        </div>
-      </div>
-
-      <div style="display: grid; gap: 24px; grid-template-columns: 1fr; margin-top: 24px;">
-        <div style="display: grid; gap: 24px; grid-template-columns: 1fr 1fr 1fr;">
-          <!-- Online Order -->
-          <div class="order-option">
-            <div style="font-size: 2rem; margin-bottom: 8px;">🌐</div>
-            <div class="order-option__name">Online Pickup</div>
-            <p style="margin: 8px 0 16px; color: var(--color-muted); font-size: 0.85rem;">Order ahead for fast, easy pickup</p>
-            <a href="https://order.online/store/hollyfood-south-ogden-28176744" target="_blank" rel="noopener" class="btn btn--accent" style="font-size: 1rem; padding: 8px 20px;">Order Now</a>
-          </div>
-          <!-- DoorDash -->
-          <div class="order-option">
-            <div style="font-size: 2rem; margin-bottom: 8px;">🔴</div>
-            <div class="order-option__name">DoorDash</div>
-            <p style="margin: 8px 0 16px; color: var(--color-muted); font-size: 0.85rem;">Delivery to your door</p>
-            <a href="https://www.doordash.com/store/hollyfood-south-ogden-28176744/" target="_blank" rel="noopener" class="btn btn--outline" style="font-size: 1rem; padding: 8px 20px;">Order on DoorDash</a>
-          </div>
-          <!-- Uber Eats -->
-          <div class="order-option">
-            <div style="font-size: 2rem; margin-bottom: 8px;">🟢</div>
-            <div class="order-option__name">Uber Eats</div>
-            <p style="margin: 8px 0 16px; color: var(--color-muted); font-size: 0.85rem;">Another delivery option</p>
-            <a href="https://www.ubereats.com/store/hollyfood/5KSA_BNISoWY7PL07afsSw" target="_blank" rel="noopener" class="btn btn--outline" style="font-size: 1rem; padding: 8px 20px;">Order on Uber Eats</a>
-          </div>
+          <a
+            href="https://www.ubereats.com/store/hollyfood/5KSA_BNISoWY7PL07afsSw"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            style="width: 100%; justify-content: center; font-size: 1.1rem;"
+          >
+            Order on Uber Eats
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== QUICK FACTS ===== -->
-  <section class="section section--mid">
+  <!-- GALLERY STRIP -->
+  <section>
     <div class="container">
-      <div class="section__header">
-        <h2>Good to Know</h2>
+      <div class="section-header reveal">
+        <span class="subheading">A Glimpse Inside</span>
+        <h2>See What Awaits <span class="text-accent">You</span></h2>
+        <div class="accent-divider"></div>
       </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-card__icon">🅿️</div>
-          <h4>Parking</h4>
-          <p>Free parking available in the lot adjacent to the restaurant — no superhero parking permit required.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal reveal-delay-1">
+          <img
+            src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AU_ZVEECdNCHZw3EZGaO9l9zt4xjTF1kuxlvA2QF__jjmhi4NZyPNE-Jl9w-irYJYmhhoLil9EmJyuS_rOFeZwMk9JzSxHM7sSD7jAYnAQoOoKt_7-UR0tULlBWQbkrSELX1ztHz8AaVvIKWuKxRaFjIK1wTGWDHSTyPY--p6GHz6-SKAdqcMW-9QnP_F__Y1LelHZ6UiZcc0382jlfVDeegZekDAbWTomIevgY9KfZWYex6SoAPuhS8jHC-kFd3DnPWQVr05hShuyO7R9DPbYeoV4TlEB-8LAy-3sZiIpoohTUTbhY1Wt77XvVxyxkLmfjP6aaw8hWYr4edCQiF_QcL-CIDJgErulEWE7ccAin9M1r3R2gIdBzuO6Af3PDW5r5xChQLp5o7TMM9G7U9BYMQhlcvxrD2rZzn844G6uFo0EA3AgflEx_Gsk3fH8mk1bkb&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+            alt="Hollyfood burgers"
+          />
         </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">🎮</div>
-          <h4>Arcade Games</h4>
-          <p>Two vintage Pac-Man machines on site. The battle doesn't end at the table.</p>
+        <div class="gallery-item reveal reveal-delay-2">
+          <img
+            src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AU_ZVEGwlp0s_E0QKUq4NAmHpON1Ock7uQkCO9CqUzmsp54nj3t34GuG3EeAFXAd_G-rlJD_sksnK2QkdaYaRSOFTds2tz5sE1unC-G97mpGstBKF44ppr2eiFDXAGKCNdx0ZAhNXG6tCaD-UHz1q2i0oQf5oRcj4nfK4W9bBJFrsqLbQxExW_l6zLccYyQ0KI0Qy_E7Z89LLR7Vg3lx6v3rcqfw-HSWYawagVcM-xLqXY6MF_HXYNHQ1BytPugESVK4FCMGpJD_pMS0dqnGiEfk3-3b8duFuIqt2K5phcMaOE8X-mhemFvVKji3bACdOBq7vem96DG-ZVwMvdlX4Jw9dVKz8pe6W7ELR1Q8N2PHP1YhE7wVFe3LXAPN0kkKhqabUUBt4O2BetSfi8eXezrpEqa8VTQh7sqzr0bvqxsoThtxntlSCwn1dC1eMywfen9Y&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+            alt="Hollyfood atmosphere"
+          />
         </div>
-        <div class="feature-card">
-          <div class="feature-card__icon">👨‍👩‍👦</div>
-          <h4>Kid Friendly</h4>
-          <p>Perfect for families — kids love the themed decor and arcade. Adults love the food. Simple as that.</p>
+        <div class="gallery-item reveal reveal-delay-3">
+          <img
+            src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AU_ZVEEmydpCON7E0C_WXVNdJjWvzF-RGOc97ykavRQOEbVgMfyzSOBsdb8-11H9oVlo7G6JUNNjPVBVF37p0jUaPqA-t_BNShCNHJ5HzY5pMLnlBwxi4lNLrLp2jOxmlgZ02e-PsUYYYrsQrEWpcwKyyqbotvmiQmhChPZEz3XyIOwK7r9pUgK62DRc9Eb20TG1YzzzrI0wYBFA0aD8W_16w1MdSma_dhpna7OQj3Js9s5pda1HHAxcqrY2aEwf5D3ImiTipOhrEnQqs9LjWaA3CbjScfXPrUD5jwV3FOfoFXtgiL9mFGWiDCkckFLSIlrYhiwBr1sJ6HhXnaUbLUhi4upUG1-QFbde1X2XIis_SiWo_lVw-_6mrAkn1niVCBnLYC_0q7ANR2Hor7wD2gjx5_S3veoVVLg1FyACrSwZduOnpkhbeTom_w1Zl92znA&key=AIzaSyDHy2hvJktkHKO5pfXkhJdqltlngdhf1ts"
+            alt="Hollyfood food"
+          />
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section class="cta-banner">
-    <div class="container">
-      <h2>The Mission Starts Now</h2>
-      <p>Whether you dine in, pick up, or order for delivery — Hollyfood is ready to fuel your next adventure.</p>
-      <div>
-        <a href="tel:3854650073" class="btn btn--accent">Call (385) 465-0073</a>
-        <a href="menu.html" class="btn btn--outline">Browse the Menu</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
+  <!-- FINAL CTA -->
+  <div class="cta-strip reveal">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <span class="logo">HOLLY<span>FOOD</span></span>
-          <p>South Ogden's superhero burger joint. Fighting hunger with fresh, never-frozen beef and unforgettable flavors since 2024.</p>
-          <div class="footer__social">
-            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener">📘 Facebook</a>
-            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener">📸 Instagram</a>
+      <h2>See You Soon!</h2>
+      <p>1706 E 5600 S, South Ogden &bull; Mon–Sat 11 AM – 8 PM</p>
+      <div style="margin-top: 1.25rem;">
+        <a href="tel:+13854650073" class="btn" style="background:#fff; color: var(--color-accent); font-size: 1.1rem;">📞 (385) 465-0073</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Holly<span>food</span></h3>
+          <p>South Ogden's superhero burger bar. Fresh burgers, legendary atmosphere, and a welcome that feels like home.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/HollyFood.Utah/" target="_blank" rel="noopener" title="Facebook">f</a>
+            <a href="https://www.instagram.com/hollyfoodut/" target="_blank" rel="noopener" title="Instagram">ig</a>
           </div>
         </div>
-        <div class="footer__col">
+        <div class="footer-col">
           <h4>Navigate</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
             <li><a href="about.html">Our Story</a></li>
             <li><a href="visit.html">Visit Us</a></li>
           </ul>
         </div>
-        <div class="footer__col">
-          <h4>Hours</h4>
-          <p>Mon – Wed: 11am – 8pm<br/>Thu – Sat: 11am – 9pm<br/>Sunday: Closed</p>
-          <h4 class="mt-lg">Contact</h4>
-          <p><a href="tel:3854650073">(385) 465-0073</a><br/>1706 E 5600 S<br/>South Ogden, UT 84403</p>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <address>
+            1706 E 5600 S<br />
+            South Ogden, UT 84403<br /><br />
+            <a href="tel:+13854650073">(385) 465-0073</a><br /><br />
+            Mon–Sat: 11 AM – 8 PM<br />
+            Sunday: Closed
+          </address>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>© 2025 Hollyfood LLC. All rights reserved.</span>
-        <span>📍 1706 E 5600 S, South Ogden, UT 84403</span>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hollyfood LLC. All rights reserved.</p>
+        <p>A place for <span style="color: var(--color-accent);">everyone</span>.</p>
       </div>
     </div>
   </footer>
 
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobileMenu');
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
+    const toggle = document.getElementById('nav-toggle');
+    const mobile = document.getElementById('nav-mobile');
+    toggle.addEventListener('click', () => {
+      toggle.classList.toggle('open');
+      mobile.classList.toggle('open');
     });
+    window.addEventListener('scroll', () => {
+      document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
