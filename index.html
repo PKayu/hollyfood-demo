@@ -6,8 +6,40 @@
   <title>Hollyfood — South Ogden's Superhero Burger Bar</title>
   <meta name="description" content="Hollyfood is South Ogden's one-of-a-kind superhero and movie-themed burger bar. Epic burgers, crispy fries, retro arcade games, and an unforgettable atmosphere. 4.9 ⭐ on Google." />
   <link rel="stylesheet" href="style.css" />
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '1234567890',
+      xfbml: true,
+      version: 'v19.0'
+    });
+    loadFacebookFeed();
+  };
+
+  function loadFacebookFeed() {
+    var feedContainer = document.getElementById('facebook-feed');
+    var url = 'https://graph.instagram.com/me/media?fields=media_type,media_url,caption,timestamp&access_token=IGQVJfVzBHREhfNTR1T0pmN0lVSVhVSUhwWGw1aEo5MWZAlWVDNkREyVnZAZAYU5GVjJWSkxzY001NN0tZATVOYkd2WTRzR25aVWxwQW9XYZVWTW1sdXJGNUVZA';
+    
+    // Fallback: Use embedded page plugin
+    var pageEmbed = document.createElement('div');
+    pageEmbed.className = 'fb-page';
+    pageEmbed.setAttribute('data-href', 'https://www.facebook.com/HollyFood.Utah/');
+    pageEmbed.setAttribute('data-tabs', 'timeline');
+    pageEmbed.setAttribute('data-width', '600');
+    pageEmbed.setAttribute('data-height', '500');
+    pageEmbed.setAttribute('data-small-header', 'true');
+    pageEmbed.setAttribute('data-adapt-container-width', 'true');
+    pageEmbed.setAttribute('data-hide-cover', 'false');
+    pageEmbed.setAttribute('data-show-facepile', 'false');
+    
+    feedContainer.appendChild(pageEmbed);
+    if (typeof FB !== 'undefined' && FB.XFBML) {
+      FB.XFBML.parse(feedContainer);
+    }
+  }
+</script>
 <script async defer crossorigin="anonymous" 
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
   </head>
 <body>
 
@@ -248,19 +280,7 @@
     <div class="container">
       <h2>On the Scene</h2>
       <p class="subtitle">Real-time updates from Hollyfood</p>
-      <div id="fb-root"></div>
-      <div class="fb-feed-wrapper">
-        <div class="fb-page" 
-          data-href="https://www.facebook.com/HollyFood.Utah/" 
-          data-tabs="timeline" 
-          data-width="100%" 
-          data-height="500" 
-          data-small-header="true" 
-          data-adapt-container-width="true" 
-          data-hide-cover="false" 
-          data-show-facepile="true">
-        </div>
-      </div>
+      <div id="facebook-feed" class="fb-feed-wrapper"></div>
     </div>
   </section>
 
