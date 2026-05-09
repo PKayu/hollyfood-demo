@@ -6,7 +6,9 @@
   <title>Hollyfood — South Ogden's Superhero Burger Bar</title>
   <meta name="description" content="Hollyfood is South Ogden's one-of-a-kind superhero and movie-themed burger bar. Epic burgers, crispy fries, retro arcade games, and an unforgettable atmosphere. 4.9 ⭐ on Google." />
   <link rel="stylesheet" href="style.css" />
-</head>
+<script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+  </head>
 <body>
 
   <!-- NAV -->
@@ -237,6 +239,26 @@
             <div style="font-family: var(--font-subheading); font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-text-muted); margin-top: 0.5rem;">Photos on Google</div>
             <a href="https://www.google.com/maps/place/Hollyfood" target="_blank" rel="noopener" style="color: var(--color-accent); font-size: 0.85rem; margin-top: 0.5rem; display: block;">View All →</a>
           </div>
+        </div>
+      </div>
+    </div>
+  
+  <!-- LIVE FACEBOOK FEED -->
+  <section class="latest-feed">
+    <div class="container">
+      <h2>On the Scene</h2>
+      <p class="subtitle">Real-time updates from Hollyfood</p>
+      <div id="fb-root"></div>
+      <div class="fb-feed-wrapper">
+        <div class="fb-page" 
+          data-href="https://www.facebook.com/HollyFood.Utah/" 
+          data-tabs="timeline" 
+          data-width="100%" 
+          data-height="500" 
+          data-small-header="true" 
+          data-adapt-container-width="true" 
+          data-hide-cover="false" 
+          data-show-facepile="true">
         </div>
       </div>
     </div>
