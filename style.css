@@ -308,7 +308,7 @@ nav.scrolled {
   position: relative;
   min-height: 92vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   overflow: hidden;
 }
@@ -331,20 +331,38 @@ nav.scrolled {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    rgba(13, 13, 13, 0.88) 0%,
-    rgba(26, 26, 46, 0.75) 50%,
-    rgba(13, 13, 13, 0.82) 100%
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.08) 55%,
+    rgba(0, 0, 0, 0.30) 100%
   );
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding: 2rem 1.5rem;
+  width: 100%;
   max-width: 900px;
+  padding: 0 1.5rem 3rem;
   margin: 0 auto;
+}
+
+.hero-card {
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  display: inline-block;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-card h1 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  margin-bottom: 0.5rem;
 }
 
 .hero-badge {
